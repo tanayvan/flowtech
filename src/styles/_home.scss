@@ -1,0 +1,89 @@
+$background: #202020;
+$red: #ca2026;
+$grey: #8d8c8f;
+.hero-container {
+  width: 100%;
+}
+
+.slider-image-container {
+  position: relative;
+}
+
+.heading-1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.image-text-container {
+  position: absolute;
+  top: 30%;
+  padding: 1rem 2rem;
+  left: 8%;
+}
+.button {
+  background: $background;
+  color: white;
+  padding: 0.5rem 1rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.button:hover {
+  background: $red;
+}
+.heading-2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin: 1rem 0;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  color: black;
+  //   background: $grey;
+}
+.swiper-pagination-bullet-active {
+  color: black;
+  background: black;
+}
+
+.swiper-pagination-bullet {
+  width: 20px;
+  border-radius: 0px;
+  height: 3px;
+  width: 10px;
+}
+.swiper-pagination-bullet-active-main {
+  width: 20px;
+  border-radius: 0px;
+  height: 3px;
+}
+// .swiper-button-next:after,
+// .swiper-container-rtl .swiper-button-prev:after {
+//   font-size: 2rem;
+// }
+@media screen and (max-width: 750px) {
+  .image-text-container {
+    padding: 1rem 2rem;
+    margin: auto;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+  }
+  .button {
+    margin: 1rem 0;
+    font-size: 0.7rem;
+    padding: 0.5rem 0.5rem;
+  }
+  .heading-1 {
+    font-size: 1.2rem;
+  }
+  .heading-2 {
+    font-size: 1rem;
+    display: none;
+  }
+}

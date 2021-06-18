@@ -1,0 +1,57 @@
+.contact-us-container {
+  font-family: Montserrat, sans-serif;
+  margin: 2rem auto;
+}
+.contact-us-heading {
+  font-size: 2rem;
+  background-color: #eee;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  padding: 2.5rem 0;
+  background-image: url("http://webaashi.com/TF/html/aashi-faucets/assets/img/backgrounds/bg1.jpg");
+  background-position: 0 -100px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.form-label {
+  font-weight: 500;
+}
+
+.form-container input {
+  width: 100%;
+  background-color: #f7f7f7;
+  color: #000;
+  outline: 0;
+  max-width: 95%;
+  border: 1px solid #ddd;
+  padding: 8px 20px;
+  margin-bottom: 1rem;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+textarea {
+  width: 98%;
+  outline: 0;
+  border: 1px solid #ddd;
+  background-color: #f7f7f7;
+  padding: 8px 20px;
+}
+
+@media screen and (max-width: 750px) {
+  .contact-us-heading {
+    background-position: 0 4px;
+  }
+}

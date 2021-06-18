@@ -1,0 +1,153 @@
+// $background: #171616;
+$background: #fff;
+$red: #ca2026;
+.brand {
+  width: 10rem;
+  cursor: pointer;
+  margin-left: 2rem;
+}
+.hamburger {
+  display: none;
+}
+.icon-container {
+  font-size: 1.5rem;
+  color: black;
+  cursor: pointer;
+  display: flex;
+  i {
+    margin: 0 1rem;
+  }
+  i:hover {
+    color: $red;
+  }
+  margin: 0 1rem;
+}
+
+nav {
+  background-color: $background;
+  width: 100%;
+  height: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 5px 5px -6px #999;
+}
+.nav-mobile-container {
+  display: none;
+}
+.nav-links-container {
+  display: flex;
+}
+.nav-links {
+  a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.3rem;
+    margin: 0 1rem;
+    display: block;
+    padding: 1rem;
+    font-weight: 700;
+    border-bottom: 1px solid transparent;
+    transition: all ease-in 100ms;
+  }
+}
+.nav-links:hover {
+  a {
+    color: $red;
+    border-bottom: 1px solid $red;
+  }
+}
+@media screen and (max-width: 750px) {
+  .active {
+    transform: translateY(0%) !important;
+  }
+  nav {
+    height: 5rem;
+  }
+  .brand {
+    width: 5rem;
+    margin-left: 1rem;
+  }
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 1rem;
+    position: relative;
+    z-index: 10;
+    color: black;
+    cursor: pointer;
+    margin-left: 10px;
+    justify-content: center;
+  }
+  .icon-container {
+    font-size: 1.3rem;
+
+    margin: 0 0.5rem;
+    i {
+      margin: 0 15px;
+    }
+  }
+  .line {
+    margin: 3px 0;
+    transition: all ease-in-out 100ms;
+    transform: rotate(0deg);
+  }
+  .line:first-child {
+    height: 2.5px;
+    width: 25px;
+    color: black;
+    background-color: black;
+  }
+  .line-1-active {
+    position: absolute;
+    transform: rotate(45deg);
+    transition: all ease-in-out 100ms;
+  }
+  .line-2-active {
+    opacity: 0;
+    transform: rotate(45deg);
+    transition: all ease-in-out 100ms;
+  }
+  .line-3-active {
+    position: absolute;
+    transform: rotate(-45deg);
+    width: 25px !important;
+    transition: all ease-in-out 100ms;
+  }
+  .line:nth-child(2) {
+    height: 2.5px;
+    width: 25px;
+    background-color: black;
+  }
+  .line:nth-child(3) {
+    height: 2.5px;
+    width: 15px;
+    background-color: black;
+    text-align: right;
+  }
+  .nav-links-container {
+    display: none;
+  }
+  .nav-mobile-container {
+    padding: 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 5px -6px #999;
+
+    position: absolute;
+    background-color: white;
+    z-index: 3;
+    width: 100%;
+    top: 0;
+    align-items: center;
+    justify-content: center;
+    .nav-links {
+      padding: 0.5rem;
+      width: 100%;
+      text-align: center;
+    }
+    transform: translateY(-100%);
+    transition: all ease-in 300ms;
+  }
+}
