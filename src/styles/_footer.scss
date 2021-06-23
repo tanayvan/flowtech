@@ -6,7 +6,12 @@ $red: #ca2026;
   margin: 2rem 0;
   color: black;
 }
-
+ul {
+  padding-left: 0rem;
+}
+.myfooter .row {
+  text-align: center;
+}
 li {
   list-style-type: none;
 }
@@ -38,6 +43,13 @@ li {
 .myfooter a:hover {
   color: $red;
 }
+.contact-us {
+  // text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
 @media screen and (max-width: 750px) {
   .brand-footer {
     text-align: center;
@@ -52,13 +64,7 @@ li {
   }
   ul {
     margin-left: 5px;
-    padding: 0;
+    padding-left: 0;
     // text-align: center;
-  }
-  .contact-us {
-    // text-align: center;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
   }
 }

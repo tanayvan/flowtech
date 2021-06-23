@@ -68,6 +68,7 @@ export default function Footer() {
             <div
               className="
               "
+              style={{ textAlign: "left" }}
             >
               <Link href="mailto:info@iwinceramic.com">
                 <i className="far fa-envelope"></i>

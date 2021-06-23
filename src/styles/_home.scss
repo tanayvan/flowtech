@@ -1,6 +1,43 @@
 $background: #202020;
 $red: #ca2026;
 $grey: #8d8c8f;
+
+.category-header{
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 0.4rem;
+  position: relative;
+  margin: 3rem 0;
+  text-transform: uppercase;
+}
+.category-header::after{
+  content: "";
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #000;
+  left: 0;
+  right: 0;
+  margin:   auto;
+  position: absolute;
+  bottom: -15px;
+  border-radius: 20px;
+
+}
+.category-header::before{
+  content: "";
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #000;
+  left: 0;
+  right: 0;
+  margin:auto;
+  position: absolute;
+  top: -10px;
+
+}
+
 .hero-container {
   width: 100%;
 }
@@ -26,6 +63,7 @@ $grey: #8d8c8f;
   outline: none;
   border: none;
   cursor: pointer;
+  transition: all linear 300ms;
 }
 .button:hover {
   background: $red;
@@ -86,4 +124,5 @@ $grey: #8d8c8f;
     font-size: 1rem;
     display: none;
   }
+ 
 }

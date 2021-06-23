@@ -9,7 +9,7 @@ export default function CategoryCard({ url, name }) {
       <div className="card-bg-container"></div>
       <div className="card-caption-container">
         <div className="card-heading-1">{name}</div>
-        <div className="button mt-3">View Details</div>
+        <div className="button mt-3">View All</div>
       </div>
     </div>
   );
