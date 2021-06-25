@@ -89,7 +89,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="copyright">Copyright 2020</div>
+      <div className="copyright text-center">Copyright 2020</div>
     </div>
   );
 }

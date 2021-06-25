@@ -50,6 +50,10 @@ li {
   flex-direction: column;
   justify-content: center;
 }
+.copyright{
+  color: grey;
+  padding: 1rem 0 0.5rem 0;
+}
 @media screen and (max-width: 750px) {
   .brand-footer {
     text-align: center;

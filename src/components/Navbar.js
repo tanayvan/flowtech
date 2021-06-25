@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../assests/Flowtech.png";
+import {motion} from "framer-motion"
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <nav>
+    <motion.nav animate={{y:0,opacity:1}} initial={{y:-100,opacity:0}} >
+    
       <div className="brand">
         <Link to="/">
           <img src={logo} alt="" width="100%" height="100%" />
@@ -72,6 +74,6 @@ export default function Navbar() {
           <Link>Contact</Link>
         </div>
       </div>
-    </nav>
+    </motion.nav>
   );
 }
